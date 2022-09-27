@@ -1,0 +1,30 @@
+DATE: September 27th 2022
+BIG DATA CENTRE OF EXCELLENCE PROBATION PERIOD.
+
+Today we were taught about the Git and Github by our 3rd Year senior mentors.
+
+"GIT" in simple terms is a version control system that is used such that multiple people can collaborate on a single codebase , and if some new update rollout causes the project to get bugs then it can be used to revert back to the time where the project was working seamlessly.
+
+"GITHUB" is the repository hosting platform where in this history is exactly stored.
+
+We were taught about the basic Terminal commands such as "cd","mkdir","ls","touch",etc.
+Also various Git commands were taught :
+1. git config --global user.name/user.email: to be associated with the global user connected to GitHub.
+2. git init: to initialise the GitHub repository i.e. to call all the git commands in to this directory.
+3. git status : to look at the unstaged files.
+4. git add: to add the files into the staging area.
+5. git commit -m "//message" : to commit the changes made.
+6. git log: to show all the commits in the branch's history.
+7. git branch : to create new branch as it is advised to create a new branch every time you do a pull request.
+8.git checkout: to move the header to the new branch.
+9.git push origin main: to push all the commits to the GitHub repo in the main branch(main can be replaced by any other branch name).
+10. git merge: to merge the specified branch into the original main branch.
+
+Also concepts of Forking branching pushing squashing commits was taught.
+
+ALSO A DETAILED CHEATSHEET FOR GITHUB WAS PROVIDED TO ALWAYS
+REFER.
+
+Priyanshu Mishra(CS 2)
+2112032.
+

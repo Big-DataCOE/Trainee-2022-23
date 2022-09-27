@@ -1,0 +1,11 @@
+Learning on 22:39 27-09-2022
+
+> Learned GIT Basics 
+	> Git Clone 
+	> Git Fork 
+	> GIt init 
+	> Git commit 
+	> git branch 
+	> git checkout 
+	> git status 
+	> git add . 

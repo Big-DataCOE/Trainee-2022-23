@@ -9,3 +9,9 @@ Learning on 22:39 27-09-2022
 	> git checkout 
 	> git status 
 	> git add . 
+
+
+Learning on 21:55 28-09-2022
+	>Learned more abouy git
+	>learned about Web development 
+    >solved codeforce problems

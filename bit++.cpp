@@ -15,6 +15,7 @@ int main()
         else
         --x;
         
+        
     }
     cout<<x;
     return 0;

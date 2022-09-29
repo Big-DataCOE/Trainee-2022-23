@@ -1,6 +1,6 @@
 java.util.*;
 
-public static void main String (args[]){
+public static void main (String args[]){
 int x,y,n;
 n=0;
 Scanner sc=new Scanner(System.in);

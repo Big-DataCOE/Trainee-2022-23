@@ -1,0 +1,13 @@
+SEPTEMBER 29
+BIG DATA CENTRE OF EXCELLENCE
+
+Today we were taught about the Big Data namely the five Vs of Big Data 
+
+1. Volume: the huge amount of data that is being generated every second .
+2. Velocity: The speed with which the data is processed and with which real time changes take place.
+3.Variety: The variety refers to the type of data being processed regularly including the Structured(in form of tables and rows such as excel sheet), Semi structured data in the form of csv files and Unstructured Data in the form of the audio visual files etc.
+4. Veracity: The accuracy of the data that is being used on big data.
+5. Value: The value that the overall data provides and the insights it provides about the user and the overall mapping of the user data.
+
+
+We also were taught about the Slave Master Architecture as well. 

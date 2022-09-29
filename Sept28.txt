@@ -1,0 +1,9 @@
+SEPTEMBER 28 
+BIG DATA CENTRE OF EXCELLENCE
+
+Today we were taught about the Web Development.
+Namely about the Client Server Architecture DNS server, CDN etc.
+We were also taught about the various parts of the WEB DEVELOPMENT 
+1. Front end: The concerning technologies such as HTML, CSS and JS also different Frameworks of JS such as View Angular etc.
+2. Backend: The backend concerning the database MongoDB, Sql and Casandrra were talked about.
+3. Also the previous two CP questions were explained and solved.

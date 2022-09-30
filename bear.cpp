@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int a,b,c=0;
+    int a,b,d=0;
     cin>>a;
     cin>>b;
     while(a<=b){
         a=a*3;
         b=b*2;
-        c++;
+        d++;
     }
-    cout<<c;
+    cout<<d;
     return 0;
 }

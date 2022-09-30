@@ -1,0 +1,12 @@
+Today we were taught about Big Data and its tools.
+Big Data have 5 Vs feature: Volume, vareity, velocity, value, veracity.
+Volume: a very large amount of data is collected from real world and various other sources.
+Vareity: collected data is of a number of vareities like images, text,audios,etc.
+Velocity:It refers to the speed at which server gets data .Processing on data is made very fast using approaches like HDFS, map reduction etc.
+value:data is analysed based on its value or importance to the user or analysist.
+veracity: the accuracy of the data or information.
+
+We came to know about HDFS i.e. Hadoop Distributed File System in file data is processed by dividing it into different nodes and 
+with parallel processing which increases speed of processing, reduces load and provide safety to data by replicating it, this is based on 
+Map Reduction.
+Thank You

@@ -1,0 +1,20 @@
+5 V of full data
+
+	1) Volume (size of data)
+	2) Velocity
+	3) Variety (introduced later)
+	4) Veracity (accuracy)
+	5) Value (relates to user response)
+	
+HADOOP 1.0
+HDFS =>
+Hadoop distributed file system
+Map reduce =>
+It divides the data and then process 
+Also do resource management
+
+
+
+HADOOP 2.0
+MAP REDUCE                 <=>         YARN         <=>           HDFS
+(data divide and process)     (resource manager)     (data divide and store at different locations to prevent data loss)

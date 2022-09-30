@@ -1,0 +1,11 @@
+29sept
+its about brief dicussion on BIG DATA AND TOOLS
+data challenge are 
+1 volume,velocity,variety,verocity,value
+solution are
+1 hadoop distribution system
+2 use of HDFS{creation of similer notes and replicate data} and main advantages is parrallel proccessing
+3 map reduce 
+4 yarn {yet resource negoiator}{resouce manager or a supply of needs to nodes for proccesing and anaylics}
+5 different bigdata tools
+ 

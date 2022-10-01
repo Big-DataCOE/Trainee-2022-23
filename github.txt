@@ -1,0 +1,6 @@
+some basic command
+git init 
+git status
+git add .
+git commmit -m"message"
+git push origin

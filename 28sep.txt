@@ -1,0 +1,8 @@
+28sep
+today is the web development view day
+we are taught about :
+cdn
+server side artitecture
+browser request,Dps(default directory),direct render service
+database mongoDB
+some CP questions

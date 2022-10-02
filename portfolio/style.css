@@ -11,10 +11,10 @@
     height:100vh;
    } 
    .main{
-    /* background-color: rgb(241, 217, 222); */
+    background-color: rgb(241, 217, 222);
     width:92vw;
     font-family:cursive;
-    padding:1%;
+    padding:1vh;
    }
    .container{
     display:flex;
@@ -37,8 +37,8 @@
     width: 200px;
    } */
    .infocontainer{
-    /* background-color: antiquewhite; */
-    height:57vh;
+    background-color: antiquewhite;
+    height:70vh;
     width:76vw;
     margin:144px  auto ;
     display:flex;
@@ -47,10 +47,13 @@
 
    }
    .shayari{
-    font-family: informal roman;
-    font-size:larger;
-    padding:1%;
-    }
+    text-align: center;
+
+   }
+    height: min-content;
+    justify-content: center;
+    text-align: center;
+    } 
     .devinfo{
         padding: 90px;
         font-size: x-large;
@@ -83,5 +86,5 @@
     }
     .devpic img{
         width: 377px;
-        height: 57vh;
+        height: 70vh;
     }

@@ -6,3 +6,6 @@ CP2
 
 8:18 AM 9/29/2022
 big data
+.LOG
+portfolio
+

@@ -1,0 +1,27 @@
+Date-27-september-2022
+
+Learnings-
+
+Topic-GIT basic commands
+git init
+git status
+git add .
+git add <file name>
+git commit
+git push original master
+git branch
+git log
+git clone <link>
+
+Topic-Competitive Programming -
+Data types
+operators
+Conditionals
+Arrays
+Vectors
+Strings
+Functions
+Namespace
+Tricks & Templates
+Time Complexity
+STL

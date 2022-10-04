@@ -1,0 +1,38 @@
+Day 2 - 28-september
+learnings-
+concepts of front-end and back-end technologies.
+
+Front-End
+-working of webpages
+-how a web page delivered to a client
+-basic info about client and server
+-steps for creation of a webpage(need analysis,designing,etc.)
+-setting up the editor
+-testing
+-troubleshooting using stackoverflow
+ 
+languages and framework
+-HTML
+-CSS
+-JS
+-reactJs
+-optimisations
+
+Back-End
+-Data management
+-Data management tools
+-node-js introduction
+-frameworks such as - django,flask,etc.
+
+hosting-
+-hosting via virtual private system VPS
+-hosting via CDN
+-sing services such as AWS,Github pages etc
+
+
+Goals of a web Developer
+to make a wesite-
+-scalable
+-robust
+-secure
+-optimised

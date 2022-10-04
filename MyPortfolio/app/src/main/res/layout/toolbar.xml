@@ -8,5 +8,8 @@
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
     android:layout_width="match_parent"
     app:title="App Title"
-    android:layout_height="?attr/actionBarSize"
-    android:background="@null"/>
+    android:layout_height="100dp"
+    android:gravity="left"
+    android:background="@null">
+
+</androidx.appcompat.widget.Toolbar>

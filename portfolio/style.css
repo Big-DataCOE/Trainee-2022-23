@@ -1,90 +1,204 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 *{
     margin: 0; 
     padding: 0%;
-   }
-   .sidebar{
-    background-color:hsl(180, 57%, 95%);
+    /* box-sizing: border-size; */
+
+}
+.partion{
+    diaplay: flex;
+    flex-direction: column;
+}
+.sidebar{
+    /* background-color:hsl(187, 66%, 77%); */
+    background-image:url(tech1.png);
     width: 250px;
     height:100vh;
-   } 
-   .main{
-    background-color: rgb(241, 217, 222);
+} 
+.main{
+    /* background-color: rgb(241, 217, 222); */
     width:92vw;
+    height:98vh;
     font-family:cursive;
+    background-image: url('tech.jpg');
+    /* background-position: 0px 0px ; */
+    /* background-repeat: no-repeat; */
+    
+    
+    
     padding:1vh;
-   }
-   .container{
+}
+.container{
     display:flex;
-   }
-   .sidebar nav{
+}
+.sidebar nav{
     padding:1px;
-   }
-   .sidebar nav li{
+}
+.sidebar nav li{
     list-style: none;
     font-size: 20px;
     padding:30px;
     font-family:cursive;
-   }
-   .sidebar nav li a {
+    
+}
+.sidebar nav li a {
+    background-color: aliceblue;
+    font-weight:bolder;
+    display:grid;
     text-decoration: none;
     color:blueviolet;
-   }
-   /* #r{
-    height: 19;
-    width: 200px;
-   } */
-   .infocontainer{
-    background-color: antiquewhite;
-    height:70vh;
-    width:76vw;
-    margin:144px  auto ;
-    display:flex;
-    justify-content:space-around;
-    
-
-   }
-   .shayari{
-    text-align: center;
-
-   }
-    height: min-content;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    padding-right: 20%;
     justify-content: center;
-    text-align: center;
-    } 
-    .devinfo{
-        padding: 90px;
-        font-size: x-large;
-    }
-    #name{
-        font-size: 300%;
-        font-family: 'Dancing Script', cursive;    
-    }
-    .devinfo{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .button{
-        margin-top: 34px;
-    }
-    .button button{
-        padding: 9px 14px;
-        border-radius: 30px;
-        color:rgb(183, 111, 60);
-        background-color:rgb(227, 248, 207);
-        font-family: cursive;
-        margin:0 3px;
-        cursor: pointer;
+    
+}
+.sidebar nav li a:hover{
+    color:brown;
+    background-color: rgb(224, 214, 137);
+}
 
-    }
-    .button button:hover{
-        color:rgb(240, 243, 225);
-        background-color:rgb(171, 124, 69);
-    }
-    .devpic img{
-        width: 377px;
-        height: 70vh;
-    }
+.infocontainer{
+    height:70vh;
+    width:70vw;
+    margin: 77px;;
+    display:flex;
+    justify-content:space-around;   
+}
+.intro{
+    padding-left: 40px;
+    margin-left: 20px;
+}
+.shayari{
+    text-align: center;    
+}
+height: min-content;
+justify-content: center;
+text-align : center;
+} 
+.devinfo{
+    padding: 90px;
+    font-size: x-large;    
+}
+#name{
+    font-size: 300%;
+    font-family: 'Dancing Script', cursive;    
+}
+.devinfo{    
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+.button{
+    margin-top: 34px;
+}
+.button button{
+    padding: 9px 14px;
+    border-radius: 30px;
+    color:rgb(183, 111, 60);
+    background-color:rgb(227, 248, 207);
+    font-family: cursive;
+    margin:0 3px;
+    cursor: pointer;    
+}
+.button button:hover{
+    color:rgb(240, 243, 225);
+    background-color:rgb(171, 124, 69);
+}
+.devpic img{
+    width: 377px;
+    height: 70vh;
+}
+.second{ border: 2px solid red;
+    height:100vh;
+    background-image:url(tech\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cv p{
+    float: left;
+    width:40%;
+    font-size: 220%;
+    padding-left: 10%;
+}
+.skill1, .contact{
+    height:100vh;
+    width: 92vw;
+    background-image: url(tech4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.skill h1{
+
+    text-align: center;
+    margin-top: 10%;
+    font-size: 250%;
+    color: rgb(56, 19, 157);
+    font-family: 'Alkalami', serif;
+    font-family: 'Peralta', cursive;
+    
+}
+.skill li{
+    display:grid;
+    margin-left: 30%;
+    font-size: 200%;
+    color: rgba(204, 40, 105, 0.959);
+    font-family: cursive;
+}
+.quali{ 
+    background-image: url(tech2.jpg);
+       background-repeat: no-repeat;
+       background-size:cover;
+       background-position: left;
+       
+}
+.quali1{
+    display: grid;
+    /* grid-template-columns: 35vw 30vw; */
+    margin-top: 10%;
+    margin-left: 40%;
+    font-size: 250%;
+    font-family: 'Alkalami', serif;
+    font-family: 'Peralta', cursive;
+
+}
+#strength{
+    background-image: url(tech5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 99vw;
+}
+.contact{
+    background-image: url(contact.jpg);
+}
+
+
+#ab{
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    font-size:50px;
+    font-family: cursive;
+}
+.contact1{
+    display:grid;
+    margin: 70px;
+    width: 50vw;
+    font-size: 34px;
+    margin-top: 30px;
+    font-family: 'Lobster', cursive;   
+}
+.about{
+    background-image: url(about1.jpg);
+    background-size: cover;
+    font-family: 'Alkalami', serif;
+    font-family: 'Peralta', cursive;
+    
+}

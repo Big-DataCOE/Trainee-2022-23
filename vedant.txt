@@ -1,0 +1,110 @@
+p1 
+bear& brother
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a,b;
+    cin>>a>>b;
+    
+    int count =0;
+    
+    while(a<=b)
+    {
+        a=a*3;
+        b=b*2;
+        count++;
+    }
+    cout<<count<<endl;
+    return 0;
+    
+}
+
+p2  bit++
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    int x=0;
+    while(n--){
+        string e;
+        cin>>e;
+          
+        for(int i=0;i<3;i++){
+            if(e[i]=='+'){
+            x++;
+            break;
+            }
+            else if(e[i]=='-'){
+            x--;
+            break;
+            }
+        }
+        
+        
+    }
+    cout<<x<<endl;
+    return 0;
+}
+
+p3 Watermelon
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    if(n<2)
+    cout<<"NO"<<endl;
+    if else(n%2==0 && n>2){
+        cout<<"YES"<<endl;
+    }
+    else
+    cout<<"NO"<<endl;
+    return 0;
+}
+
+p4
+combination lock
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    
+    string ip,mp;
+    cin>>ip>>mp;
+    int count=0;
+    for(int i=0;i<n;i++){
+        
+        if(ip[i]>=mp[i]){
+            if(ip[i]-mp[i]<=5)
+            count=count+ip[i]-mp[i];
+        
+            else
+            count=count+(10-(ip[i]-mp[i]));
+        }
+        
+         
+        else if(mp[i]>ip[i]){
+            if(mp[i]-ip[i]<=5)
+            count=count+(mp[i]-ip[i]);
+            
+            else
+            count=count+(10-(mp[i]-ip[i]));
+        }
+        
+        
+    }
+    cout<<count<<endl;
+    
+    return 0;
+}

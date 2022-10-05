@@ -1,0 +1,6 @@
+Today I came to know about Web Development and how the websites work.
+I was taught about Client Server Architecture which was the architecture of working of a website. A website first request for an IP address
+to DNS server and after getting it main is requested for a web page.
+I also came to know about frontend web development using HTML, CSS, Javascript and also about backend web development process using MongoDb,
+SQL, Cassandra, NodeJs,etc.
+

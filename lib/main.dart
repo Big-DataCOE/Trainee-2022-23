@@ -82,134 +82,141 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: "OpenSans"),
       home: Scaffold(
         resizeToAvoidBottomInset: false,
         body: cindex == 0
-            ? Container(
-                width: double.infinity,
-                height: double.infinity,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage('images/photu.jpg'),
-                        fit: BoxFit.fill)),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      height: 370,
-                      width: double.infinity,
-                      child: CircleAvatar(
-                        radius: 120,
-                        backgroundImage: AssetImage("images/sigma.jpeg"),
-                      ),
-                      decoration: BoxDecoration(
-                        color: Colors.lightBlue,
-                        borderRadius: BorderRadius.only(
-                          bottomRight: Radius.elliptical(150, 50),
-                          bottomLeft: Radius.elliptical(150, 50),
+            ? SafeArea(
+                child: Container(
+                  width: double.infinity,
+                  height: double.infinity,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage('images/photu.jpg'),
+                          fit: BoxFit.fill)),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 370,
+                        width: double.infinity,
+                        child: CircleAvatar(
+                          radius: 120,
+                          backgroundImage: AssetImage("images/sigma.jpeg"),
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.lightBlue,
+                          borderRadius: BorderRadius.only(
+                            bottomRight: Radius.elliptical(150, 50),
+                            bottomLeft: Radius.elliptical(150, 50),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "Hi! I am Harsh Sharma",
-                      style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.pink),
-                    ),
-                    Text(
-                      "App Devloper",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.normal,
+                      SizedBox(
+                        height: 10,
                       ),
-                    ),
-                    Align(
-                      alignment: Alignment.topLeft,
-                      child: Container(
-                        padding: EdgeInsets.all(5),
-                        child: Text(
-                          "About Harsh",
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                            fontSize: 25,
+                      Text(
+                        "Hi! I am Harsh Sharma",
+                        style: TextStyle(
+                            fontSize: 30,
                             fontWeight: FontWeight.bold,
+                            color: Colors.pink),
+                      ),
+                      Text(
+                        "App Developer",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: Container(
+                          padding: EdgeInsets.fromLTRB(20, 5, 5, 5),
+                          child: Text(
+                            "About Harsh",
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Align(
-                      alignment: Alignment.topLeft,
-                      child: Container(
-                        padding: EdgeInsets.all(5),
-                        child: Text(
-                          "I am a app devloper specializing in building Beautiful UI using flutter.I excel in teamwork and would like to work in a healthy organisation.",
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: Container(
+                          padding: EdgeInsets.fromLTRB(25, 5, 5, 5),
+                          child: Text(
+                            "I am a app developer specializing in building Beautiful UI using flutter.I excel in teamwork and would like to work in a healthy organisation.",
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w700,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Row(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.all(10),
-                        ),
-                        SizedBox(height: 32.0),
-                        GestureDetector(
-                          onTap: () => _launchUrl1(),
-                          child: CircleAvatar(
-                            radius: 30.0,
-                            backgroundImage: ExactAssetImage('images/git.png'),
+                      Row(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(10),
                           ),
-                        ),
-                        SizedBox(
-                          width: 48,
-                        ),
-                        GestureDetector(
-                          onTap: () => _launchUrl2(),
-                          child: CircleAvatar(
-                            radius: 30.0,
-                            backgroundImage: ExactAssetImage('images/link.png'),
+                          SizedBox(height: 32.0),
+                          GestureDetector(
+                            onTap: () => _launchUrl1(),
+                            child: CircleAvatar(
+                              radius: 30.0,
+                              backgroundImage:
+                                  ExactAssetImage('images/git.png'),
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 48,
-                        ),
-                        GestureDetector(
-                          onTap: () => _launchUrl3(),
-                          child: CircleAvatar(
-                            radius: 30.0,
-                            backgroundImage:
-                                ExactAssetImage('images/instagram.webp'),
+                          SizedBox(
+                            width: 48,
                           ),
-                        ),
-                        SizedBox(
-                          width: 48,
-                        ),
-                        GestureDetector(
-                          onTap: () => _launchUrl4(),
-                          child: CircleAvatar(
-                            radius: 30.0,
-                            backgroundImage: ExactAssetImage('images/code.png'),
-                            backgroundColor: Colors.white,
+                          GestureDetector(
+                            onTap: () => _launchUrl2(),
+                            child: CircleAvatar(
+                              radius: 30.0,
+                              backgroundImage:
+                                  ExactAssetImage('images/link.png'),
+                            ),
                           ),
-                        ),
-                      ],
-                    )
-                  ],
+                          SizedBox(
+                            width: 48,
+                          ),
+                          GestureDetector(
+                            onTap: () => _launchUrl3(),
+                            child: CircleAvatar(
+                              radius: 30.0,
+                              backgroundImage:
+                                  ExactAssetImage('images/instagram.webp'),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 48,
+                          ),
+                          GestureDetector(
+                            onTap: () => _launchUrl4(),
+                            child: CircleAvatar(
+                              radius: 30.0,
+                              backgroundImage:
+                                  ExactAssetImage('images/code.png'),
+                              backgroundColor: Colors.white,
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               )
             : Container(
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('images/bg1.jpg'), fit: BoxFit.fill)),
+                        image: AssetImage('images/photu.jpg'),
+                        fit: BoxFit.fill)),
                 child: Form(
                   key: _formKey,
                   child: Column(

@@ -5,4 +5,4 @@ Secondly we were told about Map Reduce which  is a programming model for writing
 in parallel on multiple nodes.It provies fast processing, efficient computing and safety to the collected data.
 We also came to know about YARN i.e, Yet Another Resource Negotiator.It is the second generation of hadoop.
 It  is designed for cluster management and is one of the key features in the second generation of Hadoop.
-Thank you
+Thank You

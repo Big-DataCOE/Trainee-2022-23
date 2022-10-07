@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="grey">#343a40</color>
+    <color name="pink">#ffacc5</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">My Portfolio</string>
+    <string name="college">I am pursuing B.Tech from Ajay Kumar Garg Engineering College, Ghaziabad affiliated to AKTU.</string>
+    <string name="hello">Hello</string>
+    <string name="intro">Hey there, This is Kushagra Saxena, an app developer
+    with android development as my domain, specialising in User Interfaces.
+    I am pursing my B.Tech in Computer Science in Ghaziabad and have a year
+    of experience in app development. </string>
+    <string name="objective">To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills.
+Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.
+and utilize my skills and technical studies background to the maximum.</string>
+    <string name="school">I have done my schooling from Assisi Convent School, Baheri affiliated to ICSE board.</string>
+    <style name="Theme.MyPortfolio" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

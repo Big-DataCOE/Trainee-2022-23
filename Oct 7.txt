@@ -1,0 +1,17 @@
+Today we learnt about app development.
+App development is a professional domain in which softwares are created which run on some specific devices and platforms.
+It has two categories:
+1.Native:-in this type app is build to be executed only on one specific platform e.g. ios or android.
+          Android:-java,kotlin
+          IOS:- swift
+2.Hybrid:-this involves development of apps which can be executed on multiple platforms i.e. both on android and ios.
+          flutter is used for hybrid app development.
+An android project has following components in flutter:
+1.Android & Ios folders: used for running the app in different platforms.
+2.Lib file: this is the main folder where everything related to designing and working of app is stored by programming.
+            It contains all the dart files with initial file automically formed as Main.dart.
+3.Assets:this folder contains all the resources items including images fonts and others elements we use in our app.
+
+
+In flutter smallest element is a widget. Each and every element in flutter is a widget including buttons, textfields, textviews, etc.
+thank you 

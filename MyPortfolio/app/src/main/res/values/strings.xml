@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Portfolio</string>
+    <string name="intro">Hey there, This is Kushagra Saxena, an app developer
+    with android development as my domain, specialising in User Interfaces.
+    I am pursing my B.Tech in Computer Science in Ghaziabad and have a year
+    of experience in app development. </string>
+    <string name="hello">Hello</string>
+    <string name="school">I have done my schooling from Assisi Convent School, Baheri affiliated to ICSE board.</string>
+    <string name="college">I am pursuing B.Tech from Ajay Kumar Garg Engineering College, Ghaziabad affiliated to AKTU.</string>
+    <string name="objective">To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills.
+Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.
+and utilize my skills and technical studies background to the maximum.</string>
+</resources>

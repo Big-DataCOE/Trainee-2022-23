@@ -1,0 +1,41 @@
+GIT COMMANDS->
+    git status   to know the status of the file
+    git add      to add file to staging area
+    git reset [file]      unstage a file while retaining the changes in working directory
+    git commit -m “[descriptive message]”    to commit a file
+    git log      show all commits in the current branch’s history
+    git checkout        switch to another branch and check it out into your working directory
+    git merge [branch]       merge the specified branch’s history into the current one
+    git clone [url]     retrieve an entire repository from a hosted location via URL
+    git config --global user.name “[firstname lastname]”         set a name that is identifiable for credit when review version history
+    git config --global user.email “[valid-email]”               set an email address that will be associated with each history marker
+    git stash    Save modified and staged changes
+    git stash pop     write working from top of stash stack
+
+
+
+CP TOPICS->
+  	1) INPUT / OUTPUT
+	2) DATA TYPES
+	3) OPERATORS
+	4) CONDITIONAL STATEMENTS
+	5) LOOPS
+	6) ARRAYS
+	7) VECTOR
+	8) STRING
+	9) FUNCTION
+	10) NAMESPACE
+	11) CP TRIKS
+	12) CP TEMPLATE
+	13) TIME COMPLEXITY
+	14) BASIC BINARY SEARCH / LIVE PROBLEM SOLVING
+	15) MATH FOR CP
+	16) BASIC STL : STRING,STACK,FUNCTIONS..
+	17) CODEFORCES PROBLEM SOLVING
+	18) RECURSION
+	19) ALGORITHMS
+	20) BIT MANIPULATION
+	21) ADVANCE BINARY SEARCH
+	
+	
+

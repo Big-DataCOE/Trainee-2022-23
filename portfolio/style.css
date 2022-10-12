@@ -1,68 +1,307 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Peralta&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 
 *{
     margin: 0; 
     padding: 0%;
-    /* box-sizing: border-size; */
+    
+}
+html{scroll-behavior: smooth;}
+body{
+    background-image: url(black1.png);
+    background-position: center;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header{
+    width:100%;
+   
+    background-size:cover;
+    background-position:center;
+}
+#hamitems a {
+    flex-grow:1;
+    flex-basis:0;
+    padding:10px;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+}
+
+
+
+nav{
+    /* display:flex; */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.logo{
+    width: 80px;;
+}
+
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    position:relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0%;
+    height:3px;
+    background:#faf3f5;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition:0.5s;
+    
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+
+.header-text{
+    margin-top: 10px;
+    font-size:30px;
+}
+.header-text h3{
+    margin-top:20px;
+}
+.header-text h1 span{
+    color:#d0b4bd;
+}
+form input,form textarea{
+    width:100%;
+    border:0;
+    outline:none;
+    background: #262626;
+    padding:15px;
+    margin:15px 0;
+    font-size:18px;
+    border-radius:6px;
+    color:#fff;
+}
+form .btn{
+    padding: 14px 60px;
+    font-size:18px;
+    margin-top:20px;
+    cursor:pointer;
+}
+/*---------------css for small screens---------------*/
+@media only screen and (max-width:600px){
+ #header{
+        background-image:url(); }
+    .home{
+        margin-top:100%;
+        font-size:16px;
+    }
+    section h1{
+        font-size:30px;
+    }
+    nav .fas{
+        display:block;
+        font-size:25px;
+    }
+    nav ul{
+        background: #f4eff1;
+        position:fixed;
+        top:0;
+        right:-200px;
+        width:200px;
+        height:100vh;
+        padding-top:50px;
+        z-index:2;
+        transition:right 0.5s;
+    }
+    nav ul li{
+        display:block;
+        margin:25px;
+    }
+    nav ul .fas{
+        position:absolute;
+        top:25px;
+        left:25px;
+        cursor:pointer;
+    }
+    .sub-title{
+        font-size:40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis:100%;
+    }
+    .about-col-1{
+        margin-bottom:30px;
+    }
+    .about-col-2{
+        font-size:14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin:20px;
+    }
+    .contact-left,.contact-right{
+        flex-basis:100%;
+
+    }
+    #span{
+        color:#61b752;
+        margin-top:-20px;
+        display:block;
+    }
+    
+}
+
+
+#hamnav {
+    width: 100%;
+    background:crimson;
+    position: fixed;
+  top: 0;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+
+    color: rgb(22, 9, 9);
+    text-decoration: none;
+    text-align:left;
+  }
+  #hamitems a:hover { background: #e9dee2; }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+
+  /* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid rgb(243, 238, 238);
+    }
+   
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: rgb(12, 2, 2);
+      background: crimson;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+
+   
+   
+  @media screen and (max-width:960px) {
+    .footer-container{
+      max-width: 600px;
+    }
+    .right-col{
+      width: 100%;
+      margin-bottom: 60px;
+    }
+   
+    .left-col{
+      width: 100%;
+      text-align: center;
+    }
+  }
+   
+   
+  @media screen and (max-width:700px){
+    .btn{
+      margin: 0;
+      width: 100%;
+      margin-top: 20px;
+      }
+  }
+
+
+  .bi-twitter {
+    color: #55acee;
+    margin: 5px 20px;
+}
+
+.bi-google {
+    color: #dd4b39;
+    margin: 5px 20px;
+}
+
+.bi-youtube {
+    color: #dd4b39;
+    margin: 5px 20px;
+}
+
+
+section{
+    /* height:auto; */
+    /* width:auto; */
+    padding:0% 0%;
+    margin:0% 0%;
+}
+/* .partion{
+    display: flex;
+    flex-direction: column;
+} */
+
+max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* navbar styling */
+.navbar{
+    position:fixed;
+    width: 100%;
+    padding: 2px 0;
+    background: crimson;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li{
+list-style: none;
+display: inline-block ;
+}
+.navbar .menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
 
 }
-.partion{
-    diaplay: flex;
-    flex-direction: column;
+
+
 }
-.sidebar{
-    /* background-color:hsl(187, 66%, 77%); */
-    background-image:url(tech1.png);
-    width: 250px;
-    height:100vh;
-} 
-.main{
-    /* background-color: rgb(241, 217, 222); */
-    width:92vw;
-    height:98vh;
-    font-family:cursive;
-    background-image: url('tech.jpg');
-    /* background-position: 0px 0px ; */
-    /* background-repeat: no-repeat; */
-    
-    
-    
-    padding:1vh;
-}
-.container{
-    display:flex;
-}
-.sidebar nav{
-    padding:1px;
-}
-.sidebar nav li{
-    list-style: none;
-    font-size: 20px;
-    padding:30px;
-    font-family:cursive;
-    
-}
-.sidebar nav li a {
-    background-color: aliceblue;
-    font-weight:bolder;
-    display:grid;
-    text-decoration: none;
-    color:blueviolet;
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 5px;
-    padding-right: 20%;
-    justify-content: center;
-    
-}
-.sidebar nav li a:hover{
-    color:brown;
-    background-color: rgb(224, 214, 137);
-}
+
 
 .infocontainer{
+    
     height:70vh;
     width:70vw;
     margin: 77px;;
@@ -72,39 +311,45 @@
 .intro{
     padding-left: 40px;
     margin-left: 20px;
+    /* padding-top:150px; */
 }
-.shayari{
-    text-align: center;    
-}
-height: min-content;
+
+height:{
 justify-content: center;
 text-align : center;
 } 
-.devinfo{
-    padding: 90px;
-    font-size: x-large;    
-}
+
 #name{
     font-size: 300%;
-    font-family: 'Dancing Script', cursive;    
+    font-family: cursive;    
 }
 .devinfo{    
     display: flex;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     justify-content: center;
-    flex-direction: column;
+    
+    
+}
+.intro{
+
+    width:30vw;
+    margin-right:30px;
+    margin:auto;
+    
+
 }
 .button{
-    margin-top: 34px;
+    margin-top: 20px;
 }
 .button button{
-    padding: 9px 14px;
+    padding: 10px 14px;
     border-radius: 30px;
-    color:rgb(183, 111, 60);
+    color:rgb(171, 124, 69);
     background-color:rgb(227, 248, 207);
     font-family: cursive;
     margin:0 3px;
-    cursor: pointer;    
+    cursor: pointer; 
+    text-decoration: none;   
 }
 .button button:hover{
     color:rgb(240, 243, 225);
@@ -112,93 +357,53 @@ text-align : center;
 }
 .devpic img{
     width: 377px;
-    height: 70vh;
-}
-.second{ border: 2px solid red;
-    height:100vh;
-    background-image:url(tech\ 2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.cv p{
-    float: left;
-    width:40%;
-    font-size: 220%;
-    padding-left: 10%;
-}
-.skill1, .contact{
-    height:100vh;
-    width: 92vw;
-    background-image: url(tech4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 40vh;
     
 }
-
-.skill h1{
-
-    text-align: center;
-    margin-top: 10%;
-    font-size: 250%;
-    color: rgb(56, 19, 157);
-    font-family: 'Alkalami', serif;
-    font-family: 'Peralta', cursive;
-    
-}
-.skill li{
-    display:grid;
-    margin-left: 30%;
-    font-size: 200%;
-    color: rgba(204, 40, 105, 0.959);
-    font-family: cursive;
-}
-.quali{ 
-    background-image: url(tech2.jpg);
-       background-repeat: no-repeat;
-       background-size:cover;
-       background-position: left;
-       
-}
-.quali1{
-    display: grid;
-    /* grid-template-columns: 35vw 30vw; */
-    margin-top: 10%;
-    margin-left: 40%;
-    font-size: 250%;
-    font-family: 'Alkalami', serif;
-    font-family: 'Peralta', cursive;
-
-}
-#strength{
-    background-image: url(tech5.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 99vw;
-}
-.contact{
-    background-image: url(contact.jpg);
-}
-
-
-#ab{
-    text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+/* ////////about me//////// */
+section h1{
+    padding-top: 35px;
+    padding-left:5cm;
+    padding-bottom:1px;
     font-size:50px;
-    font-family: cursive;
+    color: black;
 }
-.contact1{
-    display:grid;
-    margin: 70px;
-    width: 50vw;
-    font-size: 34px;
-    margin-top: 30px;
-    font-family: 'Lobster', cursive;   
+
+.aboutme{
+    padding:0%;
+    display:flex;
+    justify-content: space-between;
+    font-size:150%
 }
-.about{
-    background-image: url(about1.jpg);
-    background-size: cover;
-    font-family: 'Alkalami', serif;
-    font-family: 'Peralta', cursive;
-    
+img{
+    margin-left:4vmin;
+    margin-right:4vmin;
+    /* size:px; */
+}
+li{
+    list-style: none;
+}
+table{
+    padding-left: 20%;
+}
+th{
+    margin-left: 5%
+}
+.contactme{
+    width:1300px
+    justify-content: space-between;
+}
+.social img{
+    margin:50px;
+}
+form textarea {
+    /* width: 100%; */
+    border: 0;
+    outline: none;
+    background: #532323;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    color: #fff;
 }

@@ -1,0 +1,37 @@
+Today we learnt about Apache Kafka in Big Data.
+It is an open source of Linkedin written in Java and Scala.It is used for real time streams of data, to collect big data, or to do real time analysis.
+It has 2 systems :
+1.Point to point message system
+2.Pubsub message system :Topicwise data is stored.
+the main components of this system are:
+1.Producer
+2.Broker
+3.Reciever.
+
+
+
+
+We were taught about DSA topics- STL(Sets ,Multisets) and Binary Search
+1.SETS:  set<int>s;
+  Sets are a Type of container which store values with following properties:
+  i.unique
+  ii.sorted
+  iii.Insertion : O(log n):s.insert(x);
+  iv.erase:O(logN): s,erase(x);
+
+2.MULTISETS: multiset<int>a;
+  Multisets are similar to sets with exception that they can have duplicate values
+  i.can have same values
+  ii.sorted
+  iii.m.erase(x);   erase all values equal to x
+  iv.m.erase(m.find(x));  erase the value at location of x;
+
+
+
+
+Binary Search 
+it is implemented on Monotonous function 
+and Predicate function is checked which returns boolean value.
+
+thank you
+  

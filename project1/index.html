@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style2.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header>
+        <a href="#" class="logo"><span>E</span>state</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#services">services</a>
+            <a href="#feature">featured</a>
+            <a href="property-list.html">Property list</a>
+            <a href="#footer">contact</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-bars" class="fa fa-bars"></div>
+            <a href="#" class="fa fa-heart"></a>
+            <!-- <a href="#" class="fa fa-user"></a> -->
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="#" class="fa fa-user"></a></button>
+            <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="#" method="#">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar" width="100">
+                    <div style="font-size:3rem">
+                        sign in
+                    </div>
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button type="submit" style="background-color:#ff5a3c">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    <div style="font-size:3rem">
+                        <a href="#">login</a>
+                    </div>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1" >
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+        </div>
+
+    </header>
+    <!-- header section ends -->
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <form action="" name="submit-to-google-sheet">
+            <h3>Discover your dream <br>where <br>you'll will love to live </h3>
+            <div class="buttions-container">
+                <a href="#" class="btn">for rent</a>
+                <a href="#" class="btn">for sell</a>
+                <!-- <a href="#" class="btn">for purchase</a> -->
+            </div>
+            <div class="inputBox">
+                <input type="search" name="neighborhood" placeholder="neighborhood" id="">
+                <input type="search" name="city" placeholder="city" id="">
+                <select name="minimum price" id="">
+                    <option value="" disabled hidden selected>minimum price</option>
+                    <option value="$5000">$5000</option>
+                    <option value="$10000">$10000</option>
+                    <option value="$15000">$15000</option>
+                    <option value="$20000">$20000</option>
+                    <option value="$25000">$25000</option>
+                </select>
+                <select name="maximum price" id="">
+                    <option value="" disabled hidden selected>maximum price</option>
+                    <option value="$3000">$30000</option>
+                    <option value="$350000">$35000</option>
+                    <option value="$40000">$40000</option>
+                    <option value="$45000">$45000</option>
+                    <option value="$50000">$50000</option>
+                </select>
+                <select name="property status" id="">
+                    <option value="" disabled hidden selected>property status</option>
+                    <option value="flat">flat</option>
+                    <option value="under construction">under construction</option>
+                    <option value="furnished">furnished</option>
+                    <option value="semi-furnished">semi-furnished</option>
+                    <option value="unfurnished">unfurnished</option>
+                </select>
+                <select name="property type" id="">
+                    <option value="" disabled hidden selected>property type</option>
+                    <option value="Ready to move">Ready to move</option>
+                    <option value="house">house</option>
+                    <option value="shop">shop</option>
+                    <option value="warehouse">warehouse</option>
+                    <option value="land">land</option>
+                </select>
+                <select name="BKH" id="">
+                    <option value="" disabled hidden selected>BKH</option>
+                    <option value="1 BKH">1 BKH</option>
+                    <option value="2 BKH">2 BKH</option>
+                    <option value="3 BKH">3 BKH</option>
+                    <option value="4 BKH">3 BKH</option>
+                    <option value="5 BKH">5 BKH</option>
+                </select>
+                <select name="aminties" id="">
+                    <option value="" disabled hidden selected>aminties</option>
+                    <option value="parking space">parking space</option>
+                    <option value="swimming pool">swimming pool</option>
+                    <option value="playground">playground</option>
+                    <option value="security">security</option>
+                    <option value="all ">all</option>
+                </select>
+                <select name="bedrooms" id="">
+                    <option value="" disabled hidden selected>bedrooms</option>
+                    <option value="1 Bedroom">1 Bedroom</option>
+                    <option value="2 Bedroom">2 Bedroom</option>
+                    <option value="3 Bedroom">3 Bedroom</option>
+                    <option value="4 Bedroom">3 Bedroom</option>
+                    <option value="5 Bedroom">5 Bedroom</option>
+                </select>
+                <select name="bathrooms" id="">
+                    <option value="" disabled hidden selected>bathrooms</option>
+                    <option value="1 Bathroom">1 Bathroom</option>
+                    <option value="2 Bathrooms">2 Bathrooms</option>
+                    <option value="3 Bathrooms">3 Bathrooms</option>
+                    <option value="4 Bathrooms">3 Bathrooms</option>
+                    <option value="5 Bathrooms">5 Bathrooms</option>
+                </select>
+            </div>
+           <button type="button"> <input type="submit" value="search property" class="btn" ></button>
+        </form>
+    </section>
+    <!-- home section ends -->
+    <!-- service section starts -->
+    <section class="services" id="services">
+        <h1 class="heading">our <span>services</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="service-3.png" alt="">
+                <h3>buying Home</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem nostrum nihil, et
+                    voluptatibus dolorem quae. Ea iure ab asperiores eveniet laboriosam ipsam nemo consequuntur dolore
+                    adipisci, sit suscipit quibusdam itaque.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+            <div class="box">
+                <img src="service-1.png" alt="">
+                <h3>selling Home</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem nostrum nihil, et
+                    voluptatibus dolorem quae. Ea iure ab asperiores eveniet laboriosam ipsam nemo consequuntur dolore
+                    adipisci, sit suscipit quibusdam itaque.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+            <div class="box">
+                <img src="service-2.png" alt="">
+                <h3>renting Home</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem nostrum nihil, et
+                    voluptatibus dolorem quae. Ea iure ab asperiores eveniet laboriosam ipsam nemo consequuntur dolore
+                    adipisci, sit suscipit quibusdam itaque.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+    <!-- service section ends -->
+    <!-- feature section start -->
+    <section class="feature" id="feature">
+        <h1 class="heading"> <span>feature</span> properties </h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image-container">
+                    <img src="home3.jpg" alt="">
+                    <div class="info">
+                        <h3>3 days ago </h3>
+                        <h3>for rent</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#" class="fa fa-film">
+                            <h3>2</h3>
+                        </a>
+                        <a href="#" class="fa fa-camera">
+                            <h3>5</h3>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3>25,000/month</h3>
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="mailto:rani2110010@akgec.ac.in.com" class="fa fa-envelope"></a>
+                            <a href="tel:+0123756789" class="fa fa-phone"></a>
+                        </div>
+
+
+                        <div class="locations">
+                            <h3>modern apartments</h3>
+                            <p>govind puram, Ghaziabad ,201013</p>
+                        </div>
+                        <div class="details">
+                            <h3><i class="fa fa-expand"></i> 3500 sqft</h3>
+                            <h3><i class="fa fa-bed"></i>2 beds </h3>
+                            <h3><i class="fa fa-bath"></i>3 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn">request Details</a>
+                            <a href="#" class="btn">view</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="home7.jpg" alt="">
+                    <div class="info">
+                        <h3>3 days ago </h3>
+                        <h3>for rent</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#" class="fa fa-film">
+                            <h3>2</h3>
+                        </a>
+                        <a href="#" class="fa fa-camera">
+                            <h3>5</h3>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3>25,000/month</h3>
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="mailto:rani2110010@akgec.ac.in.com" class="fa fa-envelope"></a>
+                            <a href="tel:+0123756789" class="fa fa-phone"></a>
+                        </div>
+
+
+                        <div class="locations">
+                            <h3>modern apartments</h3>
+                            <p>govind puram, Ghaziabad ,201013</p>
+                        </div>
+                        <div class="details">
+                            <h3><i class="fa fa-expand"></i> 3500 sqft</h3>
+                            <h3><i class="fa fa-bed"></i>2 beds </h3>
+                            <h3><i class="fa fa-bath"></i>3 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn">request info</a>
+                            <a href="#" class="btn">view</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="home1.jpg" alt="">
+                    <div class="info">
+                        <h3>5 days ago </h3>
+                        <h3>for rent</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#" class="fa fa-film">
+                            <h3>4</h3>
+                        </a>
+                        <a href="#" class="fa fa-camera">
+                            <h3>2</h3>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3>15,000/month</h3>
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="mailto:rani2110010@akgec.ac.in.com" class="fa fa-envelope"></a>
+                            <a href="tel:+0123756789" class="fa fa-phone"></a>
+                        </div>
+
+
+                        <div class="locations">
+                            <h3>modern apartments</h3>
+                            <p>govind puram, Ghaziabad ,201013</p>
+                        </div>
+                        <div class="details">
+                            <h3><i class="fa fa-expand"></i> 3500 sqft</h3>
+                            <h3><i class="fa fa-bed"></i>1 beds </h3>
+                            <h3><i class="fa fa-bath"></i>1 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn">request info</a>
+                            <a href="#" class="btn">view</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="home2.jpg" alt="">
+                    <div class="info">
+                        <h3>7 days ago </h3>
+                        <h3>for sell</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#" class="fa fa-film">
+                            <h3>2</h3>
+                        </a>
+                        <a href="#" class="fa fa-camera">
+                            <h3>4</h3>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3>$6,25,000</h3>
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="mailto:rani2110010@akgec.ac.in.com" class="fa fa-envelope"></a>
+                            <a href="tel:+0123756789" class="fa fa-phone"></a>
+                        </div>
+
+
+                        <div class="locations">
+                            <h3>modern apartments</h3>
+                            <p>govind puram, Ghaziabad ,201013</p>
+                        </div>
+                        <div class="details">
+                            <h3><i class="fa fa-expand"></i> 3500 sqft</h3>
+                            <h3><i class="fa fa-bed"></i>3 beds </h3>
+                            <h3><i class="fa fa-bath"></i>2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn">request info</a>
+                            <a href="#" class="btn">view</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="home5.jpg" alt="">
+                    <div class="info">
+                        <h3>8 days ago </h3>
+                        <h3>for sell</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#" class="fa fa-film">
+                            <h3>1</h3>
+                        </a>
+                        <a href="#" class="fa fa-camera">
+                            <h3>5</h3>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3>$4,25,000</h3>
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="mailto:rani2110010@akgec.ac.in.com" class="fa fa-envelope"></a>
+                            <a href="tel:+0123756789" class="fa fa-phone"></a>
+                        </div>
+
+
+                        <div class="locations">
+                            <h3>modern apartments</h3>
+                            <p>govind puram, Ghaziabad ,201013</p>
+                        </div>
+                        <div class="details">
+                            <h3><i class="fa fa-expand"></i> 3500 sqft</h3>
+                            <h3><i class="fa fa-bed"></i>4 beds </h3>
+                            <h3><i class="fa fa-bath"></i>4 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn">request info</a>
+                            <a href="#" class="btn">view</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="home6.jpg" alt="">
+                    <div class="info">
+                        <h3>4 days ago </h3>
+                        <h3>for rent</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#" class="fa fa-film">
+                            <h3>2</h3>
+                        </a>
+                        <a href="#" class="fa fa-camera">
+                            <h3>5</h3>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3>10,000/month</h3>
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="mailto:rani2110010@akgec.ac.in.com" class="fa fa-envelope"></a>
+                            <a href="tel:+0123756789" class="fa fa-phone"></a>
+                        </div>
+
+
+                        <div class="locations">
+                            <h3>modern apartments</h3>
+                            <p>govind puram, Ghaziabad ,201013</p>
+                        </div>
+                        <div class="details">
+                            <h3><i class="fa fa-expand"></i> 3500 sqft</h3>
+                            <h3><i class="fa fa-bed"></i>3 beds </h3>
+                            <h3><i class="fa fa-bath"></i>1 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn">request info</a>
+                            <a href="#" class="btn">view</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <a name="footer"></a>
+    <!-- contact form start -->
+<section class="contact"  id="contact">
+<h1 class="heading"> <span>contact</span> us </h1>
+<div class="row">
+    <form action="" name="submit-to-google-sheet">
+        <div class="inputBox">
+            <input type="text" placeholder="name" name="name">
+            <input type="phone-no" placeholder="number" name="number">
+        </div>
+        <div class="inputBox">
+            <input type="email" placeholder="email" name="email">
+            <input type="text" placeholder="Subject" name="subject">
+        </div>
+        <textarea name="" placeholder="message" id="" cols="30" rows="10" name="message"></textarea>
+        <button type="button"> <input type="submit"value="send message" class="btn" ></button>
+        <!-- <input type="submit"value="send message" class="btn"> -->
+    </form>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14000.086245729774!2d77.48456368126735!3d28.689001618326866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf230c51204b1%3A0xd053494ad5b99485!2sGovindpuram%2C%20Ghaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1666944269041!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    </section>
+    <!-- contact form end -->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container" id="divi">
+
+                <div class="footer-brand">
+
+
+                    <div class="footerlogo">
+                        <a href="#" class="logo"><span>E</span>state</a>
+                    </div>
+                    <p class="section-text">
+                        Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy
+                        text of the printing.
+                    </p>
+
+                    <ul class="contact-list">
+
+                        <li>
+                            <a href="#" class="contact-link">
+                                <i class="fa fa-map" style="font-size:25px"></i>
+                                <!-- <ion-icon name="location-outline" role="img" class="md hydrated" aria-label="location outline"></ion-icon> -->
+
+                                <address>Govind puram, Ghaziabad, IN</address>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tel:+0123756789" class="contact-link">
+                                <!-- <ion-icon name="call-outline" role="img" class="md hydrated" aria-label="call outline"></ion-icon> -->
+                                <i class="fa fa-phone" style="font-size:25px"></i>
+
+                                <span>+0123-456789</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:rani2110010@akgec.ac.in.com" class="contact-link">
+                                <i class="fa fa-envelope" style="font-size:25px"></i>
+
+                                <span>contact@estate.com</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/rani-singh-7397a3235/" class="social-link">
+                                <i class="fab fa-linkedin" style="font-size:36px"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://twitter.com/home" class="social-link">
+                                <i class="fab fa-twitter" style="font-size:36px;"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/" class="social-link">
+                                <i class="fab fa-github" style="font-size:36px;"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/" class="social-link">
+                                <i class="fab fa-instagram" style="font-size:36px;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" class="social-link">
+                                <i class="fab fa-youtube" style="font-size:36px;"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-link-box">
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Company</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">All Products</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Locations Map</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Contact us</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Services</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Order tracking</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Wish List</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Login</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">My account</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Terms &amp; Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Promotional OffeRs </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Customer Care</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Login</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">My account</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Wish List</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Order tracking</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Contact us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright" style="font-size:large">
+                    © 2022 <a href="#"><strong>estate</strong></a>. All Rights Reserved
+                </p>
+
+            </div>
+        </div>
+</footer>
+    <!-- feature section ends -->
+<!-- ///////////////////// js file //////////////-->
+<script src="realestate.js"></script>
+</body>
+
+</html>

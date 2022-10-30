@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline: none;
+    border:none;
+    text-decoration:none;
+    text-transform:capitalize;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    }
+body{
+    background: #f7f7f7;
+}
+section{
+    padding:9rem 9%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3.5rem;
+    font-size: 1.7rem;
+    color:var(--red);
+    background:var(--light-red);
+    cursor: pointer;
+    text-align:center;
+    }
+.btn:hover{
+background:var(--red);
+color:#fff;
+}
+.heading{
+    text-align: center;
+    color:#333;
+    font-size:4rem;
+    padding-bottom: 3rem;
+}
+.heading span{
+    color:var(--red);
+    background: var(--light-red);
+    border-radius: .5rem;
+    padding: .2rem 1.5rem;
+
+}
+header{
+    position:fixed;
+    top:0;
+    left:0; 
+    right:0;
+    z-index:1000;
+    background:#fff;
+    padding:1.5rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo, .footerlogo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #333;
+}
+header .logo span, .footerlogo span{
+    color:var(--red);
+}
+header .navbar a{
+    color: #333;
+    font-size: 2rem;
+    padding:0 1.5rem;
+
+}
+header .navbar a:hover{
+    color: var(--red);
+}
+header .icons #menu-bars,
+header .icons a{
+    height:4.5rem;
+    line-height:4.5rem;
+    width: 5rem;
+   font-size: 2rem;
+   margin-right:.5rem;
+   border-radius: .5rem;
+   color:var(--red);
+   background:var(--light-red);
+   text-align: center;
+
+}
+header .icons #menu-bars:hover,
+header .icons a:hover{
+    background-color:var(--red);
+    color:#fff;
+}
+header .icons #menu-bars{
+    display: none;
+}
+.home{
+    min-height: 100vh;
+    background-image: url(home4.jpg) ;
+    /* overflow-wrap: normal; */
+background-size: 100% 100%;
+background-position:center; 
+    background-attachment: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.home form{
+    margin-top: 7rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    border: .1rem solid rgba(0,0,0,.2);
+    width:70rem;
+    padding:2rem;
+
+}
+.home form h3{
+    text-align: center;
+    color: #333;
+    font-size: 3rem;
+
+}
+.home form .buttions-container{
+    display:flex;
+    gap:1.5rem;
+}
+.home form .buttons-container .btn{
+    flex:1;
+}
+.home form .inputBox{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 2rem;
+}
+.home form .inputBox input,
+.home form .inputBox select{
+    flex:1 1 25rem;
+    border: .1rem solid #333;
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-transform: none;
+
+}
+.home form .btn{
+    width:100%;
+    margin-top: 2rem;
+}
+/* ///////////////////////// login page starting //////////////////////// */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #fff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color:red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; 
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 3% auto 1% auto; /*5% from the top, 15% from the bottom and centered*/
+  border: 1px solid #888;
+  width: 45%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--red);
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+label, .container span{
+    font-size: 2rem;
+}
+/* ///////////////////////////// login page ending////////////////////////////// */
+.services .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+
+}
+.services .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: 0 .5 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.2);
+    text-align: center;
+    padding:2rem;
+
+}
+.services .box-container .box h3{
+font-size: 2.5rem;
+color:#333;
+
+}
+.services .box-container .box p{
+    font-size:1.5rem;
+    color:#666;
+    padding:.5rem 0;
+    line-height: 2;
+
+}
+/* ////////////////////////////// feature section start /////////////////////////////////////////////// */
+.feature .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+
+
+}
+.feature .box-container .box{
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius:.5rem;
+    overflow:hidden;
+    background:#fff;
+    flex: 1 1 35rem;
+}
+.feature .box-container .box .image-container{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /* bfj////////////////////////////////// */
+    /* height: 50rem; */
+
+}
+.feature .box-container .box .image-container img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.feature .box-container .box:hover .image-container img{
+    transform: scale(1.1);
+}
+.feature .box-container .box .image-container .info{
+    position:absolute;
+    top: 1rem; left:0;
+    display:flex;
+
+}
+.feature .box-container .box .image-container .info h3{
+    font-weight: 500;
+    font-size:1.4rem;
+    color: #fff;
+    background:rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    margin-left : 1rem ;
+}
+.feature .box-container .box .image-container .icons{
+    position:absolute;
+    top: 15rem; right:0;
+    display:flex;
+
+}
+.feature .box-container .box .image-container .icons a{
+    
+    font-size:1.4rem;
+    color: #fff;
+    display: flex;
+    border-radius: .5rem;
+    background: rgba(0, 0, 0, .3);
+    margin-right: 1rem;
+    padding:.7rem;
+}
+.feature .box-container .box .image-container .icons a h3{
+    font-weight: 500;
+    padding-left: .5rem;
+
+}
+.feature .box-container .box .image-container .icons a:hover{
+    background: var(--red);
+}
+.feature .box-container .box .content{
+    padding:1.5rem;
+
+}
+.feature .box-container .box .content .price{
+    display:flex;
+    align-items: center;
+
+}
+.feature .box-container .box .content .price h3{
+    color: var(--red);
+    font-size: 2rem;
+    margin-right: auto;
+}
+.feature .box-container .box .content .price a{
+    color: #666;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    border-radius: .5rem;
+    height:4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+.feature .box-container .box .content .price a:hover{
+    background: var(--red);
+    color:#fff;
+
+}
+.feature .box-container .box .content .locations{
+    padding: 1rem 0;
+}
+.feature .box-container .box .content .locations h3{
+   font-size: 2.5rem;
+   color:#333;
+
+}
+.feature .box-container .box .content .locations p{
+    padding: 1.5rem;
+    color:#666;
+    line-height:1.5;
+    padding-top: .5rem;
+    
+}
+.feature .box-container .box .content .details {
+    padding:.5rem 0;
+    display: flex;
+
+}
+.feature .box-container .box .content .details h3{
+flex:1;
+padding: 1rem;
+border:.1rem solid rgba(0, 0, 0, 0.1);
+color:#999;
+font-size: 1.3rem;
+}
+.feature .box-container .box .content .details h3 i{
+    color:#333;
+    padding-left: .5rem;
+
+}
+.feature .box-container .box .content .buttons{
+    display: flex;
+    gap:1rem;
+
+}
+.feature .box-container .box .content .buttons .btn{
+    flex: 1;
+    font-size: 1.5rem;
+}
+
+/* ////////////////////////////// feature box ends //////////////////////////////// */
+/*////////////////////////////////// contact start //////////////////////////////////// */
+.contact .row{
+  background: #fff;
+  border: .1rem solid rgba(0,0,0,.2);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding:1rem;
+}
+.contact .row form{
+  flex: 1 1 50rem;
+  padding: .5rem 1rem;   
+}
+.contact .row .map{
+  flex: 1 1 30rem;
+  width: 100%;
+  padding: 1rem;
+
+}
+.contact .row form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact .row form textarea,
+.contact .row form .inputBox input{
+margin-top: 1rem;
+padding: 1rem;
+font-size: 1.7rem;
+color:#333;
+background: #f7f7f7;
+border-radius: .5rem;
+text-transform:none;
+width:49%;
+
+}
+.contact .row form textarea{
+  width:100%;
+  height:20rem;
+  resize:none;
+}
+.contact .row form textarea:focus,
+.contact .row form .inputBox input:focus{
+  background-color: var(--light-red);
+}
+/* ///////////////////////////////////// contact me end /////////////////////////////////////////// */
+
+
+/* //////////////////////////////// footer start /////////////////////////////// */
+.footer {
+    background:tomato ;
+    color: white;
+   
+  }
+  .footer .container { 
+      display:flex;
+      justify-content: space-between;
+  }
+  
+  .footer .container { padding-inline: 66px;
+   }
+  
+  .footer a { color: #fff; }
+  a:hover{
+      color:black;
+  }
+  
+  .footer-top {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .footer-link-box{
+    margin-top:87px;
+      display:flex;
+      justify-content: space-between;
+      gap:20px;
+      
+  
+  }
+  ul>li{    
+  list-style-type: none;
+  
+  }
+  
+  
+  .footer-brand { margin-bottom: 20px; }
+  
+  .footer-brand .logo { margin-bottom: 15px; }
+  
+  .section-text {
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 45ch;
+  }
+  
+  .contact-list {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  
+  
+  .contact-link :is(address, span) {
+    font-size: 2rem;
+    /* transition: var(--transition); */
+  }
+  
+  .contact-link:is(:hover, :focus) span { color: black; }
+  
+  .social-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+    
+  .footer-list:not(:last-child) { margin-bottom: 50px; }
+  
+  .footer-list-title {
+    /* font-family: var(--ff-poppins); */
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  
+  .footer-link {
+    font-size: 2rem;
+    padding-block: 10px;
+  }
+  
+  .footer-link:is(:hover, :focus) { color: black; }
+  
+  .footer-bottom {
+    background:orangered;
+    padding-block: 15px;
+  }
+  .footerlogo{
+    background:rgb(243, 236, 236);
+    border-radius: 6px;
+    width:11rem;
+    padding:9px
+    
+  }
+  .footerlogo a{
+    color:black
+  }
+  .footerlogo span{
+color:var(--red);
+  }
+  /* ///////////////////////////////// footer ends /////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media (max-width: 991px){
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-padding-top: 7rem;
+        }
+        header{
+          padding:1.5rem 1rem;
+
+        } 
+        section{
+            padding:1.5rem ;
+        }
+}
+@media (max-width: 768px){
+    header .icons #menu-bars{
+        display:inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        left:0;
+        right:0;
+        top:100%;
+        background: #f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+      display:block;
+      padding:1.5rem;
+      margin:1.5rem;
+      background:#fff;
+      border:.1rem solid #333;
+      box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+      border-radius:.5rem;
+    }
+    #divi{
+        display:grid;
+    }
+}
+@media (max-width: 480px){
+    html{
+        font-size: 50%;
+        
+        }
+        .contact .row form .inputBox input{
+            width: 100%;
+        }
+        span.psw {
+            display: block;
+            float: none;
+         }
+         .cancelbtn {
+            width: 100%;
+         }
+       
+       label, .container span{
+           font-size: 2rem;
+       }
+       
+        
+}

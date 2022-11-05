@@ -1,0 +1,89 @@
+Introduction to Web Development
+
+# Software Development Life Cycle
+
+1. Requirement Ananysis
+2. Defining Problem
+3. Designing
+4. Coding
+5. Testing
+6. Deployment
+7. Maintainence
+
+# GIT/GITHUB (Best Practices)
+
+1. Collaboration
+2. CI/CD Pipeline
+3. Working Architecture
+
+# Web Development
+
+1. Motivation for learning Web
+2. Developer Environment
+3. Editor
+4. Testing (Chrome + Postman)
+5. Stack Overflow (Effective Use)
+
+# Client Server Architecture
+
+1. Client (Frontend)
+2. Server (Backend)
+
+# Frontend Web Development
+
+1. HTML
+2. CSS
+3. JS
+4. Frameworks (Reactjs vs Nextjs)
+5. UI/UX Design Fundamentals
+6. Frontend Optimisations
+
+# Backend Web Development
+
+1. Operating System
+2. Frameworks (Expressjs, Django, Flask, Spring)
+3. Nodejs
+4. Databases (SQL, Cassandra, MongoDB, PostgreSQL)
+5. MongoDB
+
+# Backend Job
+
+1. Session Management
+2. Authentication and Authorisation
+3. API and Web Services
+4. Software Architecture (MVC)
+5. Structured Logging
+
+# Goals
+
+1. Scalability
+2. Security
+3. Robustness
+4. Performance
+5. Maintainablilty
+
+# DevOps
+
+1. Hosting
+2. Server (CDN vs VPS)
+3. Services (Heroku, Netlify, Github Pages, AWS etc.)
+
+# Bonus
+
+1. Github Student Developer Pack
+2. Hacktoberfest
+
+
+
+
+
+GOOGLE CLOUD PROGRAMMES 
+
+
+1. 30 DAYS OF GOOGLE CLOUD 
+2. LEARN TO EARN GOOGLE CLOUD 
+3
+
+
+
+
